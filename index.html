@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario - O Filme</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Video de fundo -->
+    <div class="video-background">
+      <video autoplay muted loop id="bgVideo">
+        <source src="img/background-video.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="img/logo-cap.png" alt="Mario Cap" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#personagens">Personagens</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <img
+          src="img/logo-movie.png"
+          alt="Super Mario Logo"
+          class="hero-logo"
+        />
+        <h1>Bem-vindo ao Reino do Cogumelo!</h1>
+        <p>Junte-se a Mario e Luigi em uma aventura épica</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="playSound()">
+            🎮 Jogar Agora
+          </button>
+          <a
+            class="btn btn-secondary"
+            href="https://www.primevideo.com/-/pt/detail/Super-Mario-Bros-O-Filme/0LFW40Y2WKTL522MU5K4GGL1SC"
+            target="_blank"
+          >
+            🎬Assista</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about-section">
+      <div class="container">
+        <h2 class="section-title">Sobre o Super Mario</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Super Mario é uma das franquias de videogame mais icônicas e
+              amadas de todos os tempos. Desde sua estreia em 1985, Mario tem
+              encantado gerações de jogadores ao redor do mundo.
+            </p>
+            <p>
+              Acompanhe as aventuras do encanador mais famoso do mundo enquanto
+              ele salva a Princesa Peach das garras do malvado Bowser!
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="img/mario-and-luigi.png"
+              alt="Mario e Luigi"
+              class="floating"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personagens Section -->
+    <section id="personagens" class="characters-section">
+      <div class="container">
+        <h2 class="section-title">Personagens Principais</h2>
+        <div class="characters-grid">
+          <div class="character-card">
+            <div class="character-icon">🔴</div>
+            <h3>Mario</h3>
+            <p>
+              O herói corajoso do Reino do Cogumelo. Sempre pronto para salvar a
+              Princesa Peach!
+            </p>
+          </div>
+          <div class="character-card">
+            <div class="character-icon">🟢</div>
+            <h3>Luigi</h3>
+            <p>
+              O irmão mais novo de Mario. Tímido, mas extremamente leal e
+              corajoso quando necessário.
+            </p>
+          </div>
+          <div class="character-card">
+            <div class="character-icon">👑</div>
+            <h3>Princesa Peach</h3>
+            <p>A governante gentil e bondosa do Reino do Cogumelo.</p>
+          </div>
+          <div class="character-card">
+            <div class="character-icon">🐢</div>
+            <h3>Bowser</h3>
+            <p>
+              O vilão que sempre tenta conquistar o Reino do Cogumelo e
+              sequestrar a Princesa.
+            </p>
+          </div>
+          <div class="character-card">
+            <div class="character-icon">🍄</div>
+            <h3>Toad</h3>
+            <p>
+              O fiel servo da Princesa Peach e ajudante de Mario em suas
+              aventuras.
+            </p>
+          </div>
+          <div class="character-card">
+            <div class="character-icon">⭐</div>
+            <h3>Yoshi</h3>
+            <p>O dinossauro amigável e companheiro inseparável de Mario.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="img/logo-cap.png" alt="Mario Cap" />
+            <p>© 2026 Super Mario Fan Site</p>
+          </div>
+          <div class="footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="#home">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#personagens">Personagens</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Redes Sociais</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon">📘</a>
+              <a href="#" class="social-icon">📷</a>
+              <a href="#" class="social-icon">🐦</a>
+              <a href="#" class="social-icon">▶️</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
